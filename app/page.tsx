@@ -1,8 +1,10 @@
 "use client"; // REQUIRED: This animation needs client-side JS
-
+import { FaSearchLocation, FaWhatsapp } from "react-icons/fa";
 import image from '../media/bg.jpeg';
 import Navbar from './components/navbar';
 import Typewriter from 'typewriter-effect';
+// import WhoWeAre from './components/whoweare';
+import Stats from './components/stats.tsx';
 import Characteristics  from './components/characteristics';
 import Features from './components/features';
 export default function Home() {
@@ -28,7 +30,7 @@ export default function Home() {
           </h1>
 
           {/* The Animated Typewriter Text */}
-          <div className="text-4xl font-light text-white h-12"> {/* Added h-12 to prevent layout shift */}
+          <div className="text-4xl mb-5 font-light text-white h-12"> {/* Added h-12 to prevent layout shift */}
             <Typewriter
               options={{
                 strings: ['We Carry We Care', 'Your Trusted Partner', 'Fast & Reliable'],
@@ -39,13 +41,31 @@ export default function Home() {
               }}
             />
           </div>
+          <a
+    href="#map" // or your map section id
+    className="flex items-center gap-2 btn btn-lg bg-blue-700 text-white px-8 py-2 rounded-full border-2 border-blue-500 cursor-pointer hover:bg-blue-800 transition"
+  >
+    <FaSearchLocation className="text-xl" />
+    Find Us
+  </a>
 
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/92XXXXXXXXXX" // replace with your number
+    target="_blank"
+    rel="noopener noreferrer"
+    className="ml-3 flex items-center gap-2 btn btn-lg bg-green-700 text-white px-8 py-2 rounded-full border-2 border-green-500 cursor-pointer hover:bg-green-800 transition"
+  >
+    <FaWhatsapp className="text-xl" />
+    WhatsApp
+  </a>
         </div>
       </div>
     </div>
-
+{/* <WhoWeAre /> */}
 <Features />
 <Characteristics />
+<Stats />
 </>
 );
 }
