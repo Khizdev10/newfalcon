@@ -1,7 +1,52 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
+
+
+
 @custom-variant dark (&:is(.dark *));
+
+
+
+
+
+
+/* Always-running shine animation */
+.shine-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 2.8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shine {
+  0% {
+    left: -80%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 120%;
+  }
+}
 
 @theme inline {
   --color-background: var(--background);

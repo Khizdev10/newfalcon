@@ -41,30 +41,35 @@ export default function Home() {
               }}
             />
           </div>
-          <a
-    href="#map" // or your map section id
-    className="flex items-center gap-2 btn btn-lg bg-blue-700 text-white px-8 py-2 rounded-full border-2 border-blue-500 cursor-pointer hover:bg-blue-800 transition"
+          <div className="flex justify-center items-center gap-4">
+  {/* Find Us Button */}
+  <a
+    href="#map"
+    className="shine-btn inline-flex items-center gap-1 bg-blue-700 text-white px-4 py-1 rounded-full border-2 border-blue-500 cursor-pointer hover:bg-blue-800 transition"
   >
-    <FaSearchLocation className="text-xl" />
+    <FaSearchLocation className="text-lg" />
     Find Us
   </a>
 
   {/* WhatsApp Button */}
   <a
-    href="https://wa.me/92XXXXXXXXXX" // replace with your number
+    href="https://wa.me/92XXXXXXXXXX"
     target="_blank"
     rel="noopener noreferrer"
-    className="ml-3 flex items-center gap-2 btn btn-lg bg-green-700 text-white px-8 py-2 rounded-full border-2 border-green-500 cursor-pointer hover:bg-green-800 transition"
+    className="shine-btn inline-flex items-center gap-1 bg-green-700 text-white px-4 py-1 rounded-full border-2 border-green-500 cursor-pointer hover:bg-green-800 transition"
   >
-    <FaWhatsapp className="text-xl" />
+    <FaWhatsapp className="text-lg" />
     WhatsApp
   </a>
-        </div>
+</div>
+
+  </div>
       </div>
     </div>
 {/* <WhoWeAre /> */}
 <Features />
 <Characteristics />
+
 <Stats />
 </>
 );
