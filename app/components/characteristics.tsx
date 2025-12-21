@@ -23,7 +23,7 @@ const Characteristics = () => {
   ];
 
   return (
-    <div className="w-full bg-[#1e2329] py-16 text-white" 
+    <div className="w-full min-h-[60vh] bg-[#1e2329] py-16 text-white" 
     style={{backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url(${art.src})`, backgroundSize: 'cover', backgroundPosition: 'center'}}> {/* Dark background color */}
       <div className="container mx-auto px-4">
         {/* Flex container with dividers */}

@@ -7,6 +7,8 @@ import Typewriter from 'typewriter-effect';
 import Stats from './components/stats.tsx';
 import Characteristics  from './components/characteristics';
 import Features from './components/features';
+import Footer from './components/footer';
+import MapSection from './components/locationmap';
 export default function Home() {
   return (
     <>
@@ -69,8 +71,9 @@ export default function Home() {
 {/* <WhoWeAre /> */}
 <Features />
 <Characteristics />
-
 <Stats />
+<MapSection />
+<Footer />
 </>
 );
 }

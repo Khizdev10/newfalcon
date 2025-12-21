@@ -2,7 +2,7 @@ import art from '../../media/high.jpg'
 const Stats = ()=>{
     return(
         <><div
-        className="min-h-[30vh] text-white flex flex-wrap justify-around items-center text-center gap-6"
+        className="min-h-[60vh] text-white flex flex-wrap justify-around items-center text-center gap-6"
         style={{
           backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url(${art.src})`,
           backgroundSize: 'cover',

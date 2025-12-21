@@ -1,44 +1,20 @@
-"use client";
-
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
-import L from "leaflet";
-
-// Fix marker icon issue in Next.js
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
-  iconRetinaUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png",
-  iconUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
-  shadowUrl:
-    "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",
-});
-
-export default function LocationMap() {
+export default function MapSection() {
   return (
-    <section className="w-full h-screen">
-      <MapContainer
-        center={[30.3753, 69.3451]} // Pakistan center
-        zoom={6}
-        scrollWheelZoom={false}
-        className="w-full h-full"
-      >
-        {/* Dark Theme Map */}
-        <TileLayer
-          attribution="© OpenStreetMap"
-          url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-        />
-
-        {/* Business Location Marker */}
-        <Marker position={[33.6844, 73.0479]}> {/* Example: Islamabad */}
-          <Popup>
-            <strong>New Falcon Hazara</strong>
-            <br />
-            Nationwide Transport Services
-          </Popup>
-        </Marker>
-      </MapContainer>
+    <section className="bg-[#1f2633] min-h-[60vh]">
+      <div className="max-w-7xl mx-auto ">
+        <div className="w-full h-[600px] overflow-hidden border border-white/10">
+          <iframe
+            title="Google Map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10080.934885577828!2d66.95386258478639!3d24.86888416556087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb31563f8dd329b%3A0x2b56487577976af4!2sNew%20falcon%20Hazara%20goods!5e1!3m2!1sen!2s!4v1766333719284!5m2!1sen!2s"
+            className="w-full h-full border-0"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            style={{
+              filter: "invert(0%) hue-rotate(0deg)",
+            }}
+          />
+        </div>
+      </div>
     </section>
   );
 }
