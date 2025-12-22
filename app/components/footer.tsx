@@ -22,39 +22,43 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <Phone className="text-blue-500 mt-1" size={18} />
-                <span>+22 090 1777 1998</span>
+                <span>+92 344 2656567</span>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="text-blue-500 mt-1" size={18} />
-                <span>office@exotheme.com</span>
+                <span>waqasfarooq@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="text-blue-500 mt-1" size={18} />
-                <span>Rainbow Green World, New York</span>
+                <span>2 Hawksbay Rd, Mauripur, Karachi, Pakistan</span>
               </li>
             </ul>
           </div>
 
           {/* Business Hours */}
-          <div>
-            <h3 className="text-white text-xl mb-4">Business Hours</h3>
-            <ul className="space-y-2 text-sm">
-              <li className="flex items-start gap-3">
-                <Clock className="text-blue-500 mt-1" size={18} />
-                <span>
-                  Mon – Fri:{" "}
-                  <span className="text-blue-500">9am – 10pm</span>
-                </span>
-              </li>
-              <li>
-                Saturday: <span className="text-blue-500">9am – 5pm</span>
-              </li>
-              <li>
-                Sunday & Holidays:{" "}
-                <span className="text-blue-500">Closed</span>
-              </li>
-            </ul>
-          </div>
+<div>
+  <h3 className="text-white text-xl mb-4">Business Hours</h3>
+  <ul className="space-y-3 text-sm">
+    <li className="flex items-start gap-3">
+      <Clock className="text-blue-500 mt-1" size={18} />
+      <span>
+        Mon – Fri: <span className="text-blue-500">9am – 10pm</span>
+      </span>
+    </li>
+    <li className="flex items-start gap-3">
+      <Clock className="text-blue-500 mt-1" size={18} />
+      <span>
+        Saturday: <span className="text-blue-500">9am – 5pm</span>
+      </span>
+    </li>
+    <li className="flex items-start gap-3">
+      <Clock className="text-blue-500 mt-1" size={18} />
+      <span>
+        Sunday & Holidays: <span className="text-blue-500">Closed</span>
+      </span>
+    </li>
+  </ul>
+</div>
 
           {/* Newsletter */}
           <div>
@@ -80,12 +84,8 @@ export default function Footer() {
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Exotheme. All rights reserved.</p>
-          <div className="flex gap-4 mt-2 md:mt-0">
-            <a href="#" className="hover:text-white">Privacy Policy</a>
-            <a href="#" className="hover:text-white">Terms</a>
-            <a href="#" className="hover:text-white">Support</a>
-          </div>
+          <p>© {new Date().getFullYear()} New Falcon Hazara. All rights reserved.</p>
+
         </div>
       </div>
     </footer>

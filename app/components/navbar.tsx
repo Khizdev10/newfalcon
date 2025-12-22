@@ -1,5 +1,6 @@
 "use client"
-
+import { useEffect } from "react";
+import AOS from "aos";
 import * as React from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
@@ -13,7 +14,7 @@ import {
     NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 
-import logo from '../../media/logo.png'
+import logo from '../../media/logo (2).png'
 
 // --- 1. LIST ITEM COMPONENT (Unchanged) ---
 interface ListItemProps {
@@ -23,9 +24,12 @@ interface ListItemProps {
     href?: string;
 }
 
+
 const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(({ className, title, children, href, ...props }, ref) => {
+
+    useEffect(() => { AOS.init({ duration: 1000 }); }, []);   
     return (
-        <li>
+        <li >
             <NavigationMenuLink asChild>
                 <Link
                     ref={ref}
@@ -101,7 +105,7 @@ const Navbar = () => {
                     <Link href="/">
                         <span className={cn("font-bold text-2xl tracking-widest transition-colors duration-300", (isScrolled || isMobileMenuOpen) ? "text-black" : "text-white",)} >
                             {/* Added width/height attributes for better practice */}
-                            <img src={logo.src} className="w-auto h-12 md:h-16 object-contain" alt="Logo" />
+                            <img src={logo.src} className="w-auto h-20 md:h-24 object-contain" alt="Logo" />
                         </span>
                     </Link>
                 </div>
@@ -134,10 +138,7 @@ const Navbar = () => {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                                <NavigationMenuLink asChild>
-                                    <Link href="/news" className={navItemClasses}>News</Link>
-                                </NavigationMenuLink>
-                            </NavigationMenuItem>
+                               </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
                                     <Link href="/gallery" className={navItemClasses}>Gallery</Link>
@@ -150,21 +151,6 @@ const Navbar = () => {
                             </NavigationMenuItem>
                         </NavigationMenuList>
                     </NavigationMenu>
-                </div>
-
-                {/* RIGHT: DESKTOP SEARCH (Hidden on Mobile) */}
-                <div className="hidden md:flex items-center">
-                    <div className="relative">
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            className={searchContainerClasses}
-                        />
-                        <Search className={cn(
-                            "absolute right-3 top-2.5 h-4 w-4 transition-colors duration-300",
-                            isScrolled ? "text-slate-500" : "text-gray-300"
-                        )} />
-                    </div>
                 </div>
 
                 {/* RIGHT: MOBILE MENU TOGGLE (Visible only on Mobile) */}
@@ -183,16 +169,7 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col p-4 animate-in slide-in-from-top-5 duration-200">
 
-                    {/* Mobile Search */}
-                    <div className="relative mb-6">
-                        <input
-                            type="text"
-                            placeholder="Search..."
-                            className="w-full bg-slate-100 text-slate-900 placeholder:text-slate-500 rounded-full py-3 pl-4 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
-                        />
-                        <Search className="absolute right-3 top-3.5 h-4 w-4 text-slate-500" />
-                    </div>
-
+                  
                     {/* Mobile Links List */}
                     <nav className="flex flex-col space-y-4">
                         <Link href="/" className="text-lg font-medium text-slate-900 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>
@@ -217,9 +194,6 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        <Link href="/news" className="text-lg font-medium text-slate-900 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>
-                            News
-                        </Link>
                         <Link href="/gallery" className="text-lg font-medium text-slate-900 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>
                             Gallery
                         </Link>

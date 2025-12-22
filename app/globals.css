@@ -36,6 +36,34 @@
   pointer-events: none;
 }
 
+.shine-btn-c {
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.shine-btn-c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: shine 2.8s linear infinite;
+  pointer-events: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
 @keyframes shine {
   0% {
     left: -80%;

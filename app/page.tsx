@@ -1,8 +1,12 @@
 "use client"; // REQUIRED: This animation needs client-side JS
-import { FaSearchLocation, FaWhatsapp } from "react-icons/fa";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import { FaSearchLocation, FaWhatsapp, FaPhone } from "react-icons/fa";
 import image from '../media/bg.jpeg';
 import Navbar from './components/navbar';
 import Typewriter from 'typewriter-effect';
+import Btns from './components/contact-btns.tsx'
 // import WhoWeAre from './components/whoweare';
 import Stats from './components/stats.tsx';
 import Characteristics  from './components/characteristics';
@@ -10,6 +14,7 @@ import Features from './components/features';
 import Footer from './components/footer';
 import MapSection from './components/locationmap';
 export default function Home() {
+  useEffect(() => { AOS.init({ duration: 1000 }); }, []);
   return (
     <>
     <div
@@ -26,13 +31,13 @@ export default function Home() {
       <Navbar />
       <div className="flex-1 flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-white mb-4">
+          <h1 className="text-5xl font-bold text-white mb-4" data-aos="fade-down">
             New Falcon
             <span className="text-blue-600"> Hazara</span>
           </h1>
 
           {/* The Animated Typewriter Text */}
-          <div className="text-4xl mb-5 font-light text-white h-12"> {/* Added h-12 to prevent layout shift */}
+          <div className="text-4xl mb-5 font-light text-white h-12" data-aos="fade-left"> {/* Added h-12 to prevent layout shift */}
             <Typewriter
               options={{
                 strings: ['We Carry We Care', 'Your Trusted Partner', 'Fast & Reliable'],
@@ -43,7 +48,7 @@ export default function Home() {
               }}
             />
           </div>
-          <div className="flex justify-center items-center gap-4">
+          <div className="flex justify-center items-center gap-4" data-aos="fade-up">
   {/* Find Us Button */}
   <a
     href="#map"
@@ -55,7 +60,7 @@ export default function Home() {
 
   {/* WhatsApp Button */}
   <a
-    href="https://wa.me/92XXXXXXXXXX"
+    href="https://wa.me/923442656567"
     target="_blank"
     rel="noopener noreferrer"
     className="shine-btn inline-flex items-center gap-1 bg-green-700 text-white px-4 py-1 rounded-full border-2 border-green-500 cursor-pointer hover:bg-green-800 transition"
@@ -64,6 +69,7 @@ export default function Home() {
     WhatsApp
   </a>
 </div>
+<Btns />
 
   </div>
       </div>

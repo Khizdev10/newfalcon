@@ -1,7 +1,7 @@
 export default function MapSection() {
   return (
-    <section className="bg-[#1f2633] min-h-[60vh]">
-      <div className="max-w-7xl mx-auto ">
+    <section className="bg-[#1f2633] min-h-[60vh]" id="map">
+      <div className=" mx-auto ">
         <div className="w-full h-[600px] overflow-hidden border border-white/10">
           <iframe
             title="Google Map"

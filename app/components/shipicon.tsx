@@ -13,33 +13,49 @@ const PlaneIcon = () => (
 const TruckIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5"/><path d="M14 17h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>
 );
-
 const FeaturesFlex = () => {
   const services = [
-    { title: "Ocean Freight", icon: <ShipIcon />, desc: "The word cargo refers in particular to..." },
-    { title: "Logistics", icon: <BoxIcon />, desc: "The word cargo refers in particular to..." },
-    { title: "Air Freight", icon: <PlaneIcon />, desc: "The word cargo refers in particular to..." },
-    { title: "Custom Brokerage", icon: <TruckIcon />, desc: "The word cargo refers in particular to..." },
+    {
+      title: "Full Truck Load (FTL)",
+      icon: <TruckIcon />,
+      desc: "Dedicated trucks for large shipments, ensuring fast, secure, and direct delivery without unnecessary stops."
+    },
+    {
+      title: "Less Than Truck Load (LTL)",
+      icon: <BoxIcon />,
+      desc: "Cost-effective transport for smaller consignments, combining multiple shipments while maintaining safety and efficiency."
+    },
+    {
+      title: "Express Road Delivery",
+      icon: <TruckIcon />,
+      desc: "Time-critical road transport services designed for urgent deliveries with optimized routing and real-time tracking."
+    },
+    {
+      title: "Custom & Distribution",
+      icon: <BoxIcon />,
+      desc: "Reliable distribution and local delivery solutions with flexible scheduling to support your business operations."
+    },
   ];
 
   return (
-    // Clean Grid Wrapper
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
       {services.map((service, index) => (
-        <div key={index} className="flex gap-4">
+        <div
+          key={index}
+          className="flex gap-4"
+          data-aos="fade-down"                 // Animation type
+          data-aos-delay={index * 150}       // Staggered delay
+          data-aos-duration="600"            // Animation duration
+          data-aos-once="true"               // Only animate once
+        >
           {/* Icon Circle */}
           <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white shrink-0 shadow-lg">
             {service.icon}
           </div>
           {/* Text Content */}
           <div>
-            <h3 className="text-lg font-bold text-slate-900 mb-1">{service.title}</h3>
-            <p className="text-xs text-slate-500 mb-2 leading-relaxed">
-              {service.desc}
-            </p>
-            <a href="#" className="text-blue-500 font-medium text-xs hover:underline flex items-center gap-1">
-              &gt; View Details
-            </a>
+            <h3 className="text-lg font-semibold text-slate-900">{service.title}</h3>
+            <p className="text-xs text-slate-500 mb-2 leading-relaxed">{service.desc}</p>
           </div>
         </div>
       ))}
