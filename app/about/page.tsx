@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "../components/navbar";
+import Navbar from "../components/Navbar";
 import image from "../../media/art.jpg";
 export default function About() {
     return (

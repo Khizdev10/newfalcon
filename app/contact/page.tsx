@@ -1,8 +1,8 @@
 "use client";
-import Navbar from "../components/navbar";
-import Footer from "../components/footer";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import image from "../../media/art.jpeg";
-import Btns from "../components/contact-btns";
+import Btns from "../components/Contact-btns";
 
 
 export default function Contact() {

@@ -1,5 +1,5 @@
 import truck from '../../media/high.jpg'
-import FeaturesFlex from './shipicon';
+import FeaturesFlex from './Shipicon';
 
 const Features = () => {
   return (

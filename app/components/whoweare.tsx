@@ -1,5 +1,5 @@
 import truck from '../../media/high.jpg'
-import FeaturesFlex from './shipicon';
+import FeaturesFlex from './Shipicon';
 const WhoWeAre = () => {
     return (
         <div className="min-h-[80vh] bg-blue-50 ">

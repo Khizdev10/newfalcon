@@ -4,15 +4,15 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { FaSearchLocation, FaWhatsapp, FaPhone } from "react-icons/fa";
 import image from '../media/bg.jpeg';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar.tsx';
 import Typewriter from 'typewriter-effect';
-import Btns from './components/contact-btns.tsx'
+import Btns from './components/Contact-btns.tsx';
 // import WhoWeAre from './components/whoweare';
-import Stats from './components/stats.tsx';
-import Characteristics  from './components/characteristics';
-import Features from './components/features';
-import Footer from './components/footer';
-import MapSection from './components/locationmap';
+import Stats from './components/Stats.tsx';
+import Characteristics  from './components/Characteristics.tsx';
+import Features from './components/Features.tsx';
+import Footer from './components/Footer.tsx';
+import MapSection from './components/Locationmap.tsx';
 export default function Home() {
   useEffect(() => { AOS.init({ duration: 1000 }); }, []);
   return (
