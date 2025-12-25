@@ -1,6 +1,6 @@
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
-import art from "../../media/high.jpg";
+import art from "../media/high.jpg";
 
 const Stats = () => {
   const { ref, inView } = useInView({

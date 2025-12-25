@@ -1,5 +1,5 @@
 import React from 'react';
-import art from '../../media/art.jpeg'
+import art from '../media/art.jpeg'
 
 const Characteristics = () => {
   const items = [

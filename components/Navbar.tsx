@@ -12,9 +12,9 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu"
+} from "./Navigation-menu"
 
-import logo from '../../media/logo (2).png'
+import logo from '../media/logo (2).png'
 
 // --- 1. LIST ITEM COMPONENT (Unchanged) ---
 interface ListItemProps {
