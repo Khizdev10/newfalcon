@@ -39,7 +39,7 @@ export default function Home() {
     </h1>
 
     {/* Typewriter */}
-    <div className="text-4xl mb-5 font-light text-white h-12" data-aos="fade-left">
+    <div className="text-2xl mb-5 font-light text-white h-12" data-aos="fade-left">
       <Typewriter
         options={{
           strings: ['We Carry We Care', 'Your Trusted Partner', 'Fast & Reliable'],
