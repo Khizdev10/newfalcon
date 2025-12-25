@@ -17,10 +17,10 @@ export default function Contact() {
         }} className="flex justify-center items-center">
             <h1 className="text-white text-5xl font-bold">Contact Us</h1>
     </div>
-    <section className="py-16 px-4 md:px-20 bg-gray-800">
-  <div className="max-w-3xl mx-auto p-10 rounded-lg shadow-lg bg-gray-700 text-white">
+    <section className="py-16 px-4 md:px-20 bg-white">
+  <div className="max-w-3xl mx-auto p-10 rounded-lg shadow-lg  text-black bg-gray-50">
     <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
-    <form className="space-y-4">
+    <form className="space-y-4 ">
       <input type="text" placeholder="Your Name" className="w-full p-3 border rounded"/>
       <input type="email" placeholder="Your Email" className="w-full p-3 border rounded"/>
       <input type="text" placeholder="Subject" className="w-full p-3 border rounded"/>
@@ -32,7 +32,7 @@ export default function Contact() {
 
 <Btns />
 
-<section className="py-16 px-4 md:px-20 text-white bg-gray-700">
+<section className="py-16 px-4 md:px-20 text-black bg-gray-100">
   <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
     <div>
       <h3 className="font-semibold mb-2">Phone</h3>
