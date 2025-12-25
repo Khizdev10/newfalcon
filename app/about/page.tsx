@@ -1,11 +1,11 @@
 "use client";
 import { useEffect } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../../components/Navbar";
 import image from "../../media/high.jpg";
 import falcon from "../../media/falcon logo.jpg";
-import Footer from "../components/Footer";
+import Footer from "../../components/Footer";
 import aos from "aos";
-import Btns from "../components/Contact-btns";
+import Btns from "../../components/Contact-btns";
 import "aos/dist/aos.css";
 
 // images
