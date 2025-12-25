@@ -21,7 +21,7 @@ export default function Home() {
   {/* Video Background */}
   <video
     className="absolute inset-0 w-full h-full object-cover z-10"
-    src="/videos/bg-video2.mp4"
+    src="/videos/bg-video-compressed.mp4"
     autoPlay
     loop
     muted
