@@ -3,9 +3,12 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import image from "../../media/art.jpeg";
 import Btns from "../../components/Contact-btns";
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function Contact() {
+    useEffect(() => { AOS.init({ duration: 1000 }); }, []);
     return (
         <>
             <Navbar />
@@ -15,10 +18,10 @@ export default function Contact() {
         backgroundPosition: 'center',
         height: '50vh',
         }} className="flex justify-center items-center">
-            <h1 className="text-white text-5xl font-bold">Contact Us</h1>
+            <h1 className="text-white text-5xl font-bold" data-aos="fade-down">Contact Us</h1>
     </div>
-    <section className="py-16 px-4 md:px-20 bg-white">
-  <div className="max-w-3xl mx-auto p-10 rounded-lg shadow-lg  text-black bg-gray-50">
+    <section className="py-16 px-4 md:px-20 bg-white" data-aos="fade-up">
+  <div className="max-w-3xl mx-auto p-10 rounded-lg shadow-lg  text-black bg-gray-50" data-aos="fade-up">
     <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
     <form className="space-y-4 ">
       <input type="text" placeholder="Your Name" className="w-full p-3 border rounded"/>
@@ -32,8 +35,8 @@ export default function Contact() {
 
 <Btns />
 
-<section className="py-16 px-4 md:px-20 text-black bg-gray-100">
-  <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<section className="py-16 px-4 md:px-20 text-black bg-gray-100" >
+  <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center" data-aos="fade-up">
     <div>
       <h3 className="font-semibold mb-2">Phone</h3>
       <p>+92 344 265 6567</p>
