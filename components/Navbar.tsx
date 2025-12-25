@@ -13,8 +13,7 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
 } from "./Navigation-menu"
-
-import logo from '../media/logo (2).png'
+import Logo from './Currentlogocolor'
 
 // --- 1. LIST ITEM COMPONENT (Unchanged) ---
 interface ListItemProps {
@@ -27,7 +26,7 @@ interface ListItemProps {
 
 const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(({ className, title, children, href, ...props }, ref) => {
 
-    useEffect(() => { AOS.init({ duration: 1000 }); }, []);   
+    useEffect(() => { AOS.init({ duration: 1000 }); }, []);
     return (
         <li >
             <NavigationMenuLink asChild>
@@ -103,10 +102,8 @@ const Navbar = () => {
                 {/* LEFT: LOGO */}
                 <div className="flex flex-col leading-none z-50">
                     <Link href="/">
-                        <span className={cn("font-bold text-2xl tracking-widest transition-colors duration-300", (isScrolled || isMobileMenuOpen) ? "text-black" : "text-white",)} >
-                            {/* Added width/height attributes for better practice */}
-                            <img src={logo.src} className="w-auto h-20 md:h-24 object-contain" alt="Logo" />
-                        </span>
+                        {/* Pass the condition: if scrolled or mobile menu open, it should be dark (black) */}
+                        <Logo isDark={isScrolled || isMobileMenuOpen} />
                     </Link>
                 </div>
 
@@ -122,9 +119,7 @@ const Navbar = () => {
                             <NavigationMenuItem>
                                 <NavigationMenuTrigger className={navItemClasses}>Services</NavigationMenuTrigger>
                                 <NavigationMenuContent>
-                                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                                        <ListItem href="/services/sea" title="Sea Freight">Professional logistics for international sea transport.</ListItem>
-                                        <ListItem href="/services/air" title="Air Freight">Fast and reliable air cargo solutions.</ListItem>
+                                    <ul className="grid w-[400px] gap-3 p-4">
                                         <ListItem href="/services/road" title="Road Transport">Domestic and regional trucking fleet.</ListItem>
                                     </ul>
                                 </NavigationMenuContent>
@@ -138,7 +133,7 @@ const Navbar = () => {
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
                             <NavigationMenuItem>
-                               </NavigationMenuItem>
+                            </NavigationMenuItem>
                             <NavigationMenuItem>
                                 <NavigationMenuLink asChild>
                                     <Link href="/gallery" className={navItemClasses}>Gallery</Link>
@@ -169,7 +164,7 @@ const Navbar = () => {
             {isMobileMenuOpen && (
                 <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-lg border-t border-gray-100 flex flex-col p-4 animate-in slide-in-from-top-5 duration-200">
 
-                  
+
                     {/* Mobile Links List */}
                     <nav className="flex flex-col space-y-4">
                         <Link href="/" className="text-lg font-medium text-slate-900 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>
@@ -180,8 +175,6 @@ const Navbar = () => {
                         <div className="flex flex-col space-y-2">
                             <span className="text-lg font-medium text-slate-900 opacity-80">Services</span>
                             <div className="flex flex-col pl-4 space-y-2 border-l-2 border-slate-100">
-                                <Link href="/services/sea" className="text-slate-600 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>Sea Freight</Link>
-                                <Link href="/services/air" className="text-slate-600 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>Air Freight</Link>
                                 <Link href="/services/road" className="text-slate-600 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>Road Transport</Link>
                             </div>
                         </div>
