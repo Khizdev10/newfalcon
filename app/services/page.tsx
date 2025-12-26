@@ -1,9 +1,12 @@
 "use client";
+import dynamic from "next/dynamic";
+
+const DeliveryMap = dynamic(() => import("@/components/DeliveryMap"), { ssr: false });
 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Truck, MapPin, Briefcase } from "lucide-react";
-import DeliveryMap from "@/components/DeliveryMap";
+// import DeliveryMap from "@/components/DeliveryMap";
 import AOS from 'aos';
 
 import Btns from '@/components/Contact-btns'
