@@ -1,4 +1,4 @@
-import { Phone, Clock, Mail, MapPin } from "lucide-react";
+import { Phone, Clock, Mail, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="text-blue-500 mt-1" size={18} />
-                <span>waqasfarooq@gmail.com</span>
+                <span>waqasfarooq243@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="text-blue-500 mt-1" size={18} />
@@ -48,32 +48,33 @@ export default function Footer() {
     <li className="flex items-start gap-3">
       <Clock className="text-blue-500 mt-1" size={18} />
       <span>
-        Saturday: <span className="text-blue-500">9am – 5pm</span>
+        Saturday: <span className="text-blue-500">9am – 10pm</span>
       </span>
     </li>
     <li className="flex items-start gap-3">
       <Clock className="text-blue-500 mt-1" size={18} />
       <span>
-        Sunday & Holidays: <span className="text-blue-500">Closed</span>
+        Sunday: <span className="text-blue-500">9am – 10pm</span>
       </span>
     </li>
   </ul>
 </div>
 
-          {/* Newsletter */}
+    
           <div>
-            <h3 className="text-white text-xl mb-4">Newsletter</h3>
+            <h3 className="text-white text-xl mb-4">Social Links</h3>
             <p className="text-sm mb-4">
-              Subscribe to get the latest updates and offers.
+              Follow us on social media for the latest updates and offers.
             </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="w-full px-3  py-2 text-white outline-none bg-gray-700"
-              />
-              <button className="bg-blue-600 px-4 text-white">
-                Subscribe
+            <div className="flex justify-start items-center">
+              <button className="bg-blue-600 px-4 py-4 cursor-pointer rounded-full text-white">
+                <Facebook />
+              </button>
+              <button className="bg-blue-600 ml-2 px-4 py-4 cursor-pointer rounded-full text-white">
+                <Instagram />
+              </button>
+              <button className="bg-blue-600 ml-2 px-4 py-4 cursor-pointer rounded-full text-white">
+                <Twitter />
               </button>
             </div>
           </div>

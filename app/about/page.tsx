@@ -37,7 +37,7 @@ export default function About() {
             className="text-white text-5xl font-bold mb-4 mt-20"
             data-aos="fade-down"
           >
-            About Us
+            <span className="text-blue-500">About</span> Us
           </h1>
           <p
             className="text-slate-200 text-lg leading-relaxed"
@@ -68,7 +68,7 @@ export default function About() {
             </h2>
 
             <h3
-              className="text-2xl font-semibold mb-4 opacity-60"
+              className="text-2xl font-semibold mb-4 opacity-50"
               data-aos="fade-up"
             >
               Goods Forwarding Agency

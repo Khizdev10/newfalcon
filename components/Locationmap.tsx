@@ -1,5 +1,6 @@
 export default function MapSection() {
   return (
+    <>
     <section className="bg-[#1f2633] min-h-[60vh]" id="map">
       <div className=" mx-auto ">
         <div className="w-full h-[600px] overflow-hidden border border-white/10">
@@ -13,8 +14,13 @@ export default function MapSection() {
               filter: "invert(0%) hue-rotate(0deg)",
             }}
           />
+          
         </div>
+        
       </div>
+      
     </section>
+  
+  </>
   );
 }

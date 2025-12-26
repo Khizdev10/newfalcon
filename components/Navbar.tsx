@@ -120,7 +120,7 @@ const Navbar = () => {
                                 <NavigationMenuTrigger className={navItemClasses}>Services</NavigationMenuTrigger>
                                 <NavigationMenuContent>
                                     <ul className="grid w-[400px] gap-3 p-4">
-                                        <ListItem href="/services/road" title="Road Transport">Domestic and regional trucking fleet.</ListItem>
+                                        <ListItem href="/services" title="Road Transport">Domestic and regional trucking fleet.</ListItem>
                                     </ul>
                                 </NavigationMenuContent>
                             </NavigationMenuItem>
@@ -175,7 +175,7 @@ const Navbar = () => {
                         <div className="flex flex-col space-y-2">
                             <span className="text-lg font-medium text-slate-900 opacity-80">Services</span>
                             <div className="flex flex-col pl-4 space-y-2 border-l-2 border-slate-100">
-                                <Link href="/services/road" className="text-slate-600 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>Road Transport</Link>
+                                <Link href="/services" className="text-slate-600 hover:text-blue-600" onClick={() => setIsMobileMenuOpen(false)}>Road Transport</Link>
                             </div>
                         </div>
 

@@ -36,6 +36,12 @@
   pointer-events: none;
 }
 
+.gallery-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-rows: masonry;
+}
 .shine-btn-c {
   /* position: relative; */
   overflow: hidden;

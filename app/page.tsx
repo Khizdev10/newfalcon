@@ -31,7 +31,7 @@ export default function Home() {
   {/* Optional overlay to darken video */}
   <div className="absolute inset-0  bg-opacity-20 z-10" style={{backgroundColor: 'rgba(15, 23, 42, 0.9)'}}></div>
   <Navbar />
-  
+
   {/* Content */}
   <div className="relative flex-1 flex flex-col items-center justify-center z-10 text-center">
     <h1 className="text-5xl font-bold text-white mb-4" data-aos="fade-down">

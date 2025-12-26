@@ -3,6 +3,7 @@ import { FaSearchLocation, FaWhatsapp, FaPhone} from "react-icons/fa";
 export default function Btns () {
     return (
         <>
+        
             <a
                 href="https://wa.me/923442656567?text=Hello%20I%20would%20like%20to%20inquire"
                 target="_blank"
