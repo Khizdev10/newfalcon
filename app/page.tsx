@@ -34,7 +34,7 @@ export default function Home() {
 
   {/* Content */}
   <div className="relative flex-1 flex flex-col items-center justify-center z-10 text-center">
-    <h1 className="text-5xl font-bold text-white mb-4" data-aos="fade-down">
+    <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4" data-aos="fade-down">
       New Falcon <span className="text-blue-600"> Hazara</span>
     </h1>
 

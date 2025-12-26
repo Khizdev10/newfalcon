@@ -34,7 +34,7 @@ export default function About() {
       >
         <div className="max-w-3xl">
           <h1
-            className="text-white text-5xl font-bold mb-4 mt-20"
+            className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4 mt-20"
             data-aos="fade-down"
           >
             <span className="text-blue-500">About</span> Us

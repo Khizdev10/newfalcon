@@ -35,7 +35,7 @@ export default function Gallery() {
         }} data-aos="fade-down"
         className="flex justify-center items-center"
       >
-        <h1 className="text-4xl font-bold text-center text-white">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-white">
           Gallery
         </h1>
       </div>

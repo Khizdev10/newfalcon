@@ -24,7 +24,7 @@ export default function ServicesPage() {
         backgroundPosition: 'center',
         height: '50vh',
       }} data-aos="fade-down">
-        <h1 className="text-4xl md:text-5xl font-bold ">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold ">
           Our <span className="text-blue-500">Services</span>
         </h1>
         <p className="mt-4 text-gray-300 max-w-2xl mx-auto">

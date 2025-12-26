@@ -7,7 +7,7 @@ import {FaPhone,FaMailBulk} from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
+import Mapsection from "../../components/Locationmap";
 export default function Contact() {
     useEffect(() => { AOS.init({ duration: 1000 }); }, []);
     return (
@@ -19,9 +19,10 @@ export default function Contact() {
         backgroundPosition: 'center',
         height: '50vh',
         }} className="flex justify-center items-center">
-            <h1 className="text-white text-5xl font-bold" data-aos="fade-down"> <span className="text-blue-500">Contact</span> Us</h1>
+            <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold" data-aos="fade-down"> <span className="text-blue-500">Contact</span> Us</h1>
     </div>
-    <section className="py-16 px-4 md:px-20 bg-white" data-aos="fade-up">
+   
+    {/* <section className="py-16 px-4 md:px-20 bg-white" data-aos="fade-up">
   <div className="max-w-3xl mx-auto p-10 rounded-lg shadow-lg  text-black bg-gray-50" data-aos="fade-up">
     <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
     <form className="space-y-4 ">
@@ -32,7 +33,7 @@ export default function Contact() {
       <button className="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">Send Message</button>
     </form>
   </div>
-</section>
+</section> */}
 
 <Btns />
 
@@ -54,6 +55,7 @@ export default function Contact() {
   </div>
 </section>
 
+<Mapsection />
     <Footer />
     </>
     );
