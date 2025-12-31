@@ -21,7 +21,7 @@ const Stats = () => {
       data-aos-duration="800"
       data-aos-once="true"
     >
-      {/* Item 1 */}
+
       <div className="flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="100">
         <h1 className="text-blue-700 text-3xl font-bold">
           {inView ? <CountUp start={0} end={20} duration={2} /> : 0}+
@@ -29,7 +29,6 @@ const Stats = () => {
         <p className="text-lg">Years of Experience</p>
       </div>
 
-      {/* Item 2 */}
       <div className="flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="200">
         <h1 className="text-blue-700 text-3xl font-bold">
           {inView ? <CountUp start={0} end={100000} duration={2.5} separator="," /> : 0}+
@@ -37,7 +36,6 @@ const Stats = () => {
         <p className="text-lg">Successful Deliveries</p>
       </div>
 
-      {/* Item 3 */}
       <div className="flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="300">
         <h1 className="text-blue-700 text-3xl font-bold">
           {inView ? <CountUp start={0} end={50} duration={2} /> : 0}+
@@ -45,7 +43,6 @@ const Stats = () => {
         <p className="text-lg">Fleet Vehicles</p>
       </div>
 
-      {/* Item 4 */}
       <div className="flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="400">
         <h1 className="text-blue-700 text-3xl font-bold">
           {inView ? <CountUp start={0} end={100} duration={2.5} /> : 0}%

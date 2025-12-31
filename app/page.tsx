@@ -38,7 +38,7 @@ export default function Home() {
     style={{fontFamily:"ui-sans-serif"}}>
       New Falcon Hazara  
     </h1>
-    <p className='text-white text-2xl font-lighter'> Goods Forwarding Agency</p>
+    <p className='text-white text-2xl font-lighter opacity-80' data-aos='fade-up'> Goods Forwarding Agency</p>
 
     {/* Typewriter */}
     <div className="text-2xl mb-5 font-light text-white h-12" data-aos="fade-left">
