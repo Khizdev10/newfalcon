@@ -32,7 +32,7 @@ const Stats = () => {
       {/* Item 2 */}
       <div className="flex flex-col items-center justify-center" data-aos="zoom-in" data-aos-delay="200">
         <h1 className="text-blue-700 text-3xl font-bold">
-          {inView ? <CountUp start={0} end={10000} duration={2.5} separator="," /> : 0}+
+          {inView ? <CountUp start={0} end={100000} duration={2.5} separator="," /> : 0}+
         </h1>
         <p className="text-lg">Successful Deliveries</p>
       </div>

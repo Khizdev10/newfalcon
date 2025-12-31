@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import image from "../../media/high.jpg";
 export default function ServicesPage() {
-    useEffect(() => { AOS.init({ duration: 1000 }); }, []);
+  useEffect(() => { AOS.init({ duration: 1000 }); }, []);
   return (
     <>
       <Navbar />
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-<Btns />
+      <Btns />
       {/* MAP SECTION */}
       <section className="bg-gray-50 py-20" data-aos="fade-up">
         <h2 className="text-3xl font-bold text-center mb-10">
@@ -70,13 +70,13 @@ export default function ServicesPage() {
   );
 }
 
-function ServiceCard({ title, desc,icon:Icon}: { title: string; desc: string;icon:any }) {
+function ServiceCard({ title, desc, icon: Icon }: { title: string; desc: string; icon: any }) {
   return (
     <div className="bg-white p-6 rounded-xl flex items-center justify-evenly shadow hover:shadow-lg transition">
       <Icon className="w-10 h-10 text-blue-500 mb-4" />
       <div>
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
-      <p className="text-gray-600">{desc}</p>
+        <h3 className="text-xl font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600">{desc}</p>
       </div>
     </div>
   );

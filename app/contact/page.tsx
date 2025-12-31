@@ -42,15 +42,30 @@ export default function Contact() {
     <div>
       
       <h3 className="font-semibold mb-2">Phone</h3>
+      
+      <p>+92 300 265 6527</p>
       <p>+92 344 265 6567</p>
+      <p>+92 321 234 7261</p>
+      <p>+92 345 204 6567</p>
+      <p>+92 332 338 5621</p>
+      <p>+92 341 432 4451</p>
     </div>
+
+    <div>
+      
+      <h3 className="font-semibold mb-2">Ptcl</h3>
+      
+      <p>021 323 56335</p>
+      
+    </div>
+
     <div>
       <h3 className="font-semibold mb-2">Email</h3>
       <p>waqasfarooq243@gmail.com</p>
     </div>
     <div>
       <h3 className="font-semibold mb-2">Address</h3>
-      <p>2 Hawksbay Rd, Mauripur, Karachi, Pakistan</p>
+      <p>Plot: 397-398 Gate no: 2 Street: 01, New Quaid-Azam truck stand, Hawksbay Road Karachi, Pakistan</p>
     </div>
   </div>
 </section>

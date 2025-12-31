@@ -30,7 +30,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="text-blue-500 mt-1" size={18} />
-                <span>2 Hawksbay Rd, Mauripur, Karachi, Pakistan</span>
+                <span>Plot: 397-398 Gate no: 2 Street: 01, New Quaid-Azam truck stand, Hawksbay Road Karachi, Pakistan</span>
               </li>
             </ul>
           </div>
@@ -42,19 +42,19 @@ export default function Footer() {
     <li className="flex items-start gap-3">
       <Clock className="text-blue-500 mt-1" size={18} />
       <span>
-        Mon – Fri: <span className="text-blue-500">9am – 10pm</span>
+        Mon – Fri: <span className="text-blue-500">9am – 11pm</span>
       </span>
     </li>
     <li className="flex items-start gap-3">
       <Clock className="text-blue-500 mt-1" size={18} />
       <span>
-        Saturday: <span className="text-blue-500">9am – 10pm</span>
+        Saturday: <span className="text-blue-500">9am – 11pm</span>
       </span>
     </li>
     <li className="flex items-start gap-3">
       <Clock className="text-blue-500 mt-1" size={18} />
       <span>
-        Sunday: <span className="text-blue-500">9am – 10pm</span>
+        Sunday: <span className="text-blue-500">off</span>
       </span>
     </li>
   </ul>
